@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: antiquewhite;
+  background-color: black;
+  background: rgb(65,38,0);
+background: linear-gradient(90deg, rgba(65,38,0,1) 0%, rgba(0,3,10,1) 50%, rgba(0,15,45,1) 100%);
+}
+.collapsible {
+  background-color: transparent;
+  color: antiquewhite;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(0,15,45,1);
+}
+.analysis {
+  opacity: 0;
+  animation-name: analy;
+}
+.analysis:hover {
+  opacity: 1;
+  transition: 0.2s ease-out;
+}
+.content {
+  background-color: transparent;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (min-width: 800px) {
+  /* For tablets: */
+h1 {font-size: 16px;}
+}
+
+</style>
+</head>
+<body>
+
+<div>
+  <img class="analysis" src="./img/1.png" style="width: 100px; margin-top: 20px;">
+  <img class="analysis" src="./img/2.png" style="width: 100px; margin-top: 20px;">
+  <img class="analysis" src="./img/3.png" style="width: 100px; margin-top: 20px;">
+  <img class="analysis" src="./img/4.png" style="width: 100px; margin-top: 20px;">
+  <img class="analysis" src="./img/3.png" style="width: 100px; margin-top: 20px;">
+  <img class="analysis" src="./img/2.png" style="width: 100px; margin-top: 20px;">
+  <img class="analysis" src="./img/1.png" style="width: 100px; margin-top: 20px;">
+</div>
+
+<h1 style="height: 16vh; right: 0; top: 0; position: absolute; font-size: 48px; margin-top: -36px; text-align: right;">
+  <pre>Modern Architecture:<br>A Critical History <a href="./moarch.html" style="color: antiquewhite;">in Virtual</a></pre></h1>
+
+
+<div style="width: 47.5vw; position: absolute; top: 180px; left: 2vw;">
+  <h2>By Architect</h2>
+  <button class="collapsible">Walter Gropius</button>
+  <div class="content">
+    <p>Walter Adolph Georg Gropius (18 May 1883 – 5 July 1969) was a German architect 
+      and founder of the Bauhaus School. He is a founder of Bauhaus in Weimar (1919). Gropius was also a 
+      leading architect of the International Style.</p>
+      <img src="./img/walter gropius.jpg" style="width: 20vw;">
+    <h3>Fagus Factory, the first attempt</h3>
+    <img src="./img/fagus.jpg" style="width: 32vw;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10136.280095242331!2d9.8121885!3d51.9835496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd76df8069b8de57f!2sGreCon%2C%20Inc.!5e1!3m2!1sen!2s!4v1634265711484!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>In 1911, he and Adolf Meyer designed the Fagus Factory, a glass and steel cubic 
+      building which pioneered modern architectural devices such as glass curtain walls, 
+      and was built from the floor plans of the more traditional industrial architect Eduard Werner.</p>
+  </div>
+  <button class="collapsible">Le Corbusier</button>
+  <div class="content">
+    <p>Charles-Édouard Jeanneret (6 October 1887 – 27 August 1965), known as Le Corbusier 
+      was a Swiss-French architect, designer, painter, urban planner, writer, and one of the 
+      pioneers of what is now regarded as modern architecture. He was born in Switzerland 
+      and became a French citizen in 1930. His career spanned five decades, and he designed 
+      buildings in Europe, Japan, India, and North and South America.</p>
+      <img src="./img/le corbusier.jpg" style="width: 20vw;">
+    <h3>Villa Savoye</h3>
+    <img src="./img/villa savoye.jpg" style="width: 32vw;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.2913854466068!2d2.027841075032299!3d48.92435410030048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6894713fe71a7%3A0xca7c23ccbd696e16!2sVilla%20Savoye!5e1!3m2!1sen!2s!4v1634265778119!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>Completed in 1931, Villa Savoye is one of the most important houses of the 20th century. 
+      A key building in the development of the International Style of Modernism, 
+      it is one of the only houses in France to have been declared a national monument 
+      during the architect's lifetime.
+    </p>
+  </div>
+  <button class="collapsible">Mies van der Rohe</button>
+  <div class="content">
+    <p>Ludwig Mies van der Rohe; (born Maria Ludwig Michael Mies; March 27, 1886 – August 17, 1969) was a German-American 
+      architect. He was commonly referred to as Mies, his surname. Along with Alvar Aalto, Le Corbusier, 
+      Walter Gropius and Frank Lloyd Wright, he is regarded as one of the pioneers of modernist architecture.</p>
+      <img src="./img/mies.jpg" style="width: 20vw;">
+    <h3>Farnsworth House</h3>
+    <img src="./img/farnsworth house.jpg" style="width: 32vw;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1789.3072734312607!2d-88.53647138885455!3d41.635170063715606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ec11ee9030729%3A0xb7ce648588ec297e!2sFarnsworth%20House!5e1!3m2!1sen!2s!4v1634265829148!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>The Farnsworth House, built between 1945 and 1951 for Dr. Edith Farnsworth as a weekend retreat, 
+      is a platonic perfection of order gently placed in spontaneous nature in Plano, Illinois. 
+      Just right outside of Chicago in a 10-acre secluded wooded site with the Fox River to the south, 
+      the glass pavilion takes full advantage of relating to its natural surroundings, achieving Mies' 
+      concept of a strong relationship between the house and nature.</p>
+  </div>
+  <button class="collapsible">Richard Meier</button>
+  <div class="content">
+    <p>Richard Meier (born October 12, 1934) is an American abstract artist and architect, whose geometric 
+      designs make prominent use of the color white. A winner of the Pritzker Architecture Prize in 1984, 
+      Meier has designed several iconic buildings including the Barcelona Museum of Contemporary Art, 
+      the Getty Center in Los Angeles, and San Jose City Hall.</p>
+      <img src="./img/meier.jpg" style="width: 20vw;">
+    <h3>Smith House</h3>
+    <img src="./img/smith house.jpg" style="width: 32vw;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.2523287072568!2d-73.45719178997012!3d41.05483276593429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e81fdd0c474b81%3A0x75a9fcf7796b122b!2sFrederick%20J.%20Smith%20House!5e1!3m2!1sen!2s!4v1634265998188!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>Five decades ago, Carole Smith called Richard Meier and told him about a site in Darien, 
+      Connecticut that she had bought with her husband. This was a rocky piece of land with 
+      dense evergreens and coastal outcrops. A dramatic slope at the back of the plot gave way 
+      to the Long Island Sound and a small, sandy cove. Carole wanted to place her weekend home 
+      on this particular site and she wanted Richard Meier to do it. At that time, he was just 31.</p>
+  </div>
+</div>
+
+
+<div style="left: 50vw; top: 180px; width: 47.5vw; position: absolute;">
+  <h2>By Topic</h2>
+<button class="collapsible">Esprit Nouveau/1907-31</button>
+<div class="content">
+  <p>Charles-Édouard Jeanneret (6 October 1887 – 27 August 1965), known as Le Corbusier 
+    was a Swiss-French architect, designer, painter, urban planner, writer, and one of the 
+    pioneers of what is now regarded as modern architecture. He was born in Switzerland 
+    and became a French citizen in 1930. His career spanned five decades, and he designed 
+    buildings in Europe, Japan, India, and North and South America.</p>
+    <img src="./img/le corbusier.jpg" style="width: 20vw;">
+  <h3>Villa Savoye</h3>
+  <img src="./img/villa savoye.jpg" style="width: 32vw;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.2913854466068!2d2.027841075032299!3d48.92435410030048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6894713fe71a7%3A0xca7c23ccbd696e16!2sVilla%20Savoye!5e1!3m2!1sen!2s!4v1634265778119!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p>Completed in 1931, Villa Savoye is one of the most important houses of the 20th century. 
+    A key building in the development of the International Style of Modernism, 
+    it is one of the only houses in France to have been declared a national monument 
+    during the architect's lifetime.
+  </p>
+</div>
+<button class="collapsible">The Bauhaus/1919-32</button>
+<div class="content">
+  <p>Walter Adolph Georg Gropius (18 May 1883 – 5 July 1969) was a German architect 
+    and founder of the Bauhaus School. He is a founder of Bauhaus in Weimar (1919). Gropius was also a 
+    leading architect of the International Style.</p>
+    <img src="./img/walter gropius.jpg" style="width: 20vw;">
+  <h3>Fagus Factory, the first attempt</h3>
+  <img src="./img/fagus.jpg" style="width: 32vw;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10136.280095242331!2d9.8121885!3d51.9835496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd76df8069b8de57f!2sGreCon%2C%20Inc.!5e1!3m2!1sen!2s!4v1634265711484!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p>In 1911, he and Adolf Meyer designed the Fagus Factory, a glass and steel cubic 
+    building which pioneered modern architectural devices such as glass curtain walls, 
+    and was built from the floor plans of the more traditional industrial architect Eduard Werner.</p>
+</div>
+<button class="collapsible">The International Style/1925-65</button>
+<div class="content">
+  <p>Richard Meier (born October 12, 1934) is an American abstract artist and architect, whose geometric 
+    designs make prominent use of the color white. A winner of the Pritzker Architecture Prize in 1984, 
+    Meier has designed several iconic buildings including the Barcelona Museum of Contemporary Art, 
+    the Getty Center in Los Angeles, and San Jose City Hall.</p>
+    <img src="./img/meier.jpg" style="width: 20vw;">
+  <h3>Smith House</h3>
+  <img src="./img/smith house.jpg" style="width: 32vw;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.2523287072568!2d-73.45719178997012!3d41.05483276593429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e81fdd0c474b81%3A0x75a9fcf7796b122b!2sFrederick%20J.%20Smith%20House!5e1!3m2!1sen!2s!4v1634265998188!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p>Five decades ago, Carole Smith called Richard Meier and told him about a site in Darien, 
+    Connecticut that she had bought with her husband. This was a rocky piece of land with 
+    dense evergreens and coastal outcrops. A dramatic slope at the back of the plot gave way 
+    to the Long Island Sound and a small, sandy cove. Carole wanted to place her weekend home 
+    on this particular site and she wanted Richard Meier to do it. At that time, he was just 31.</p>
+</div>
+<button class="collapsible">Monumentalization of Technique/1933-67</button>
+<div class="content">
+  <p>Ludwig Mies van der Rohe; (born Maria Ludwig Michael Mies; March 27, 1886 – August 17, 1969) was a German-American 
+    architect. He was commonly referred to as Mies, his surname. Along with Alvar Aalto, Le Corbusier, 
+    Walter Gropius and Frank Lloyd Wright, he is regarded as one of the pioneers of modernist architecture.</p>
+    <img src="./img/mies.jpg" style="width: 20vw;">
+  <h3>Farnsworth House</h3>
+  <img src="./img/farnsworth house.jpg" style="width: 32vw;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1789.3072734312607!2d-88.53647138885455!3d41.635170063715606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ec11ee9030729%3A0xb7ce648588ec297e!2sFarnsworth%20House!5e1!3m2!1sen!2s!4v1634265829148!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p>The Farnsworth House, built between 1945 and 1951 for Dr. Edith Farnsworth as a weekend retreat, 
+    is a platonic perfection of order gently placed in spontaneous nature in Plano, Illinois. 
+    Just right outside of Chicago in a 10-acre secluded wooded site with the Fox River to the south, 
+    the glass pavilion takes full advantage of relating to its natural surroundings, achieving Mies' 
+    concept of a strong relationship between the house and nature.</p>
+</div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
